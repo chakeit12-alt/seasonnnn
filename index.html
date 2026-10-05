@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Digital Assets 数字资产 | คู่มือก่อนเริ่มลงทุน</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600;900&family=Noto+Serif+Thai:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f3e9d2;--card:#fbf4e3;--ink:#2a1c14;--mute:#6b5646;--red:#9b1c1c;--gold:#b8892b;--line:#d9c59a;--hero:#7d1414;--herotx:#f7e6b8;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1d1210;--card:#2a1a16;--ink:#f1e3c4;--mute:#bba685;--red:#e05a4a;--gold:#d9ad4f;--line:#4a3425;--hero:#5e0f0f;--herotx:#f7e6b8}}
+:root[data-theme="dark"]{--bg:#1d1210;--card:#2a1a16;--ink:#f1e3c4;--mute:#bba685;--red:#e05a4a;--gold:#d9ad4f;--line:#4a3425;--hero:#5e0f0f;--herotx:#f7e6b8}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.8 "Noto Serif Thai","Noto Serif SC",Georgia,serif}
+h1,h2,h3{font-family:"Noto Serif SC","Noto Serif Thai",Georgia,serif;line-height:1.3;margin:0}
+.wrap{max-width:980px;margin:0 auto;padding:0 20px}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--hero);border-bottom:3px solid var(--gold)}
+nav .wrap{display:flex;gap:18px;overflow-x:auto;padding:10px 20px;font-size:14px;white-space:nowrap}
+nav a{color:var(--herotx);text-decoration:none}nav a:hover,nav a:focus-visible{color:#fff;outline:none;text-decoration:underline}
+.hero{background:var(--hero);color:var(--herotx);position:relative;overflow:hidden;padding:64px 0 72px;
+background-image:repeating-linear-gradient(45deg,rgba(184,137,43,.12) 0 1px,transparent 1px 22px),repeating-linear-gradient(-45deg,rgba(184,137,43,.12) 0 1px,transparent 1px 22px)}
+.hero .wrap{display:grid;grid-template-columns:1fr auto;gap:32px;align-items:center}
+.hero h1{font-size:clamp(34px,6vw,60px);font-weight:900}
+.hero p{max-width:34em;margin:16px 0 0;opacity:.92}
+.coin{width:190px;height:190px;border-radius:50%;border:6px solid var(--gold);display:grid;place-items:center;position:relative;background:radial-gradient(circle,#d9ad4f,#b8892b);color:#5e0f0f;font:900 78px "Noto Serif SC",serif;box-shadow:0 0 0 10px rgba(184,137,43,.25)}
+.coin::after{content:"";position:absolute;width:56px;height:56px;border:5px solid #5e0f0f;opacity:.0}
+.seal{display:inline-block;margin-top:22px;border:2px solid var(--gold);padding:4px 14px;font:900 15px "Noto Serif SC",serif;letter-spacing:.2em;color:var(--gold)}
+section{padding:56px 0;border-bottom:1px solid var(--line)}
+.h{display:flex;align-items:center;gap:14px;margin-bottom:22px}
+.h b{flex:none;width:46px;height:46px;background:var(--red);color:#fbe9bf;display:grid;place-items:center;font:900 24px "Noto Serif SC",serif;border-radius:4px;transform:rotate(-4deg)}
+.h h2{font-size:clamp(22px,3.4vw,30px)}
+.h small{display:block;color:var(--mute);font-size:13px;font-weight:400}
+.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(210px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-top:4px solid var(--gold);padding:18px 18px 16px;border-radius:2px}
+.card h3{font-size:19px;color:var(--red);margin-bottom:6px}.card p{margin:4px 0;font-size:15px;color:var(--mute)}
+.card .z{float:right;font:900 34px "Noto Serif SC",serif;color:var(--gold);opacity:.5;line-height:1}
+.chain{display:flex;flex-wrap:wrap;gap:0;margin:8px 0 22px;counter-reset:s}
+.chain div{flex:1 1 180px;background:var(--red);color:#fbe9bf;padding:14px 16px;position:relative;margin:2px;font-size:14px}
+.chain b{display:block;font-size:17px;color:#f3d27a}
+.warn{border-left:5px solid var(--red);background:var(--card);padding:14px 18px;margin-top:10px}
+.warn ul{margin:6px 0 0;padding-left:20px;color:var(--mute);font-size:15px}
+table{width:100%;border-collapse:collapse;background:var(--card);font-size:14.5px}
+th{background:var(--red);color:#fbe9bf;text-align:left;padding:10px}td{padding:10px;border-bottom:1px solid var(--line);vertical-align:top}
+tr.best td{background:rgba(184,137,43,.2);font-weight:600}
+.scroll{overflow-x:auto}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
+.tabs button{font:600 15px "Noto Serif Thai",serif;padding:9px 16px;border:2px solid var(--red);background:transparent;color:var(--red);cursor:pointer;border-radius:2px}
+.tabs button[aria-selected="true"]{background:var(--red);color:#fbe9bf}
+.tabs button:focus-visible{outline:3px solid var(--gold)}
+.bar{display:flex;height:54px;border:2px solid var(--ink);margin:10px 0}
+.bar i{display:grid;place-items:center;font:600 13px "Noto Serif Thai",serif;font-style:normal;color:#fff;overflow:hidden;transition:flex-basis .4s}
+.legend{display:grid;gap:4px;font-size:14.5px;color:var(--mute)}.legend span{display:inline-block;width:12px;height:12px;margin-right:8px;vertical-align:middle}
+.two{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.myth{border:1px dashed var(--red);padding:14px;background:var(--card)}.fact{border:1px solid var(--gold);padding:14px;background:var(--card)}
+.tag{font:900 14px "Noto Serif SC",serif;color:var(--red)}.fact .tag{color:var(--gold)}
+ol.rules{list-style:none;padding:0;margin:0;display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));counter-reset:r}
+ol.rules li{counter-increment:r;background:var(--card);border:1px solid var(--line);padding:12px 14px 12px 58px;position:relative;font-size:15px}
+ol.rules li::before{content:counter(r);position:absolute;left:12px;top:12px;width:34px;height:34px;border-radius:50%;background:var(--gold);color:#3b2410;display:grid;place-items:center;font:900 18px "Noto Serif SC",serif}
+ol.rules b{display:block;color:var(--red)}
+.take{background:var(--hero);color:var(--herotx);padding:60px 0;background-image:repeating-linear-gradient(45deg,rgba(184,137,43,.12) 0 1px,transparent 1px 22px),repeating-linear-gradient(-45deg,rgba(184,137,43,.12) 0 1px,transparent 1px 22px)}
+.take h2{text-align:center;font-size:clamp(24px,4vw,34px);margin-bottom:26px}
+.take .grid{grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+.take .k{border:1px solid var(--gold);padding:16px;background:rgba(0,0,0,.18)}.take .k b{color:#f3d27a;display:block}
+.quote{text-align:center;margin-top:30px;font:900 20px "Noto Serif SC","Noto Serif Thai",serif;color:#f3d27a}
+footer{text-align:center;padding:22px;color:var(--mute);font-size:13px}
+@media(max-width:640px){.hero .wrap{grid-template-columns:1fr}.coin{width:120px;height:120px;font-size:50px;order:-1}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<nav><div class="wrap"><a href="#a">สินทรัพย์ดิจิทัล</a><a href="#b">Web3</a><a href="#c">Mindset</a><a href="#d">จัดพอร์ต</a><a href="#e">ความเสี่ยง</a><a href="#f">Wallet</a><a href="#g">Security</a><a href="#h">Backtest</a></div></nav>
+
+<header class="hero"><div class="wrap">
+<div><h1>数字资产<br>Digital Assets</h1>
+<p>สิ่งที่คุณต้องรู้ก่อนเริ่มลงทุนใน Crypto: ทำความเข้าใจสินทรัพย์ ความเสี่ยง การจัดพอร์ต และการเก็บรักษาอย่างปลอดภัย</p>
+<span class="seal">风险自负</span></div>
+<div class="coin" aria-hidden="true">₿</div></div></header>
+
+<main>
+<section id="a"><div class="wrap">
+<div class="h"><b>币</b><div><h2>Crypto คืออะไร?</h2><small>สินทรัพย์ดิจิทัลบน Blockchain ทำธุรกรรมได้โดยไม่ต้องผ่านธนาคาร</small></div></div>
+<div class="grid">
+<div class="card"><span class="z">金</span><h3>Bitcoin (BTC)</h3><p>จำกัดที่ 21 ล้านเหรียญ พิมพ์เพิ่มไม่ได้ จึงถูกมองเป็น "ทองคำดิจิทัล"</p><p>บทบาท: สะสมมูลค่า (Store of Value)</p></div>
+<div class="card"><span class="z">油</span><h3>Ether (ETH)</h3><p>เหรียญหลักของ Ethereum บล็อกเชนที่รองรับ Smart Contract</p><p>บทบาท: "น้ำมัน" จ่ายค่า Gas Fee เพื่อรันระบบ</p></div>
+<div class="card"><span class="z">稳</span><h3>Stablecoin</h3><p>ผูกมูลค่ากับเงินจริง เช่น 1 USDT/USDC ≈ 1 ดอลลาร์สหรัฐ</p><p>บทบาท: พักเงิน ลดความผันผวน โอนข้ามประเทศ</p></div>
+<div class="card"><span class="z">契</span><h3>NFT &amp; Tokenized Assets</h3><p>NFT คือความเป็นเจ้าของชิ้นเดียวในโลก ส่วน RWA คือการแปลงอสังหาฯ หรือหุ้นกู้เป็นโทเคน</p><p>บทบาท: แบ่งถือครองเป็นหน่วยย่อย (Fractional Ownership)</p></div>
+</div></div></section>
+
+<section id="b"><div class="wrap">
+<div class="h"><b>网</b><div><h2>Web3 คืออะไร</h2><small>Web1 อ่านอย่างเดียว → Web2 อ่าน-เขียน → Web3 อ่าน-เขียน-ถือครอง</small></div></div>
+<div class="chain">
+<div><b>1 Blockchain</b>สมุดบัญชีร่วม ปลอดภัย แก้ไขไม่ได้</div>
+<div><b>2 Smart Contract</b>สัญญาอัจฉริยะ ทำงานเมื่อครบเงื่อนไข</div>
+<div><b>3 Crypto &amp; NFT</b>สินทรัพย์และโทเคนบน Smart Contract</div>
+<div><b>4 DeFi &amp; dApps</b>การเงินและแอปแบบไร้คนกลาง</div></div>
+<div class="warn"><h3>Decentralized ≠ ปลอดภัย 100%</h3>เมื่อไม่มีคนกลาง ความรับผิดชอบทั้งหมดตกอยู่กับผู้ใช้
+<ul><li>Private Key / Seed Phrase หาย: ไม่มี Call Center ช่วยกู้คืน</li><li>Phishing &amp; Scams: ถูกหลอกให้กดลิงก์ปลอมหรือเซ็นอนุมัติอันตราย</li><li>Smart Contract Exploits: โค้ดมีช่องโหว่ ถูกแฮกเกอร์ดึงเงิน</li><li>Exchange Risk: ตัวกลางอาจล้มละลายหรือระงับการถอน</li><li>User Errors: โอนผิดเครือข่ายหรือพิมพ์ Address ผิด ดึงคืนไม่ได้</li></ul></div>
+</div></section>
+
+<section id="c"><div class="wrap">
+<div class="h"><b>心</b><div><h2>Crypto ไม่ใช่แค่ "ซื้อแล้วรอราคาขึ้น"</h2><small>เปลี่ยนจากเก็งกำไรระยะสั้น สู่การจัดสัดส่วนตามเป้าหมาย</small></div></div>
+<div class="scroll"><table><tr><th>นักเก็งกำไร (Speculator)</th><th>นักลงทุน (Investor)</th></tr>
+<tr><td>โฟกัสแค่ราคา: "เหรียญนี้จะขึ้นกี่ %?"</td><td>โฟกัสคุณค่า: แก้ปัญหาอะไร มี Use Case จริงไหม</td></tr>
+<tr><td>ตัดสินใจตามกระแสและข่าวลือ (FOMO)</td><td>ตัดสินใจด้วยข้อมูลและกรอบบริหารความเสี่ยง</td></tr>
+<tr><td>ลงทุนหมดตัวเพราะหวังรวยเร็ว</td><td>จัดสัดส่วนตามระดับความเสี่ยงที่รับได้</td></tr></table></div>
+<div class="grid" style="margin-top:18px">
+<div class="card"><h3>6 ข้อเช็กก่อนเพิ่ม Crypto</h3><p>1 ผลตอบแทนคาดหวัง · 2 ความเสี่ยงที่ยอมรับได้ (ขาดทุน 30-50% ในคืนเดียวไหวไหม) · 3 ความผันผวน · 4 Correlation กับสินทรัพย์อื่น · 5 สัดส่วนที่เหมาะสม · 6 ระยะเวลาลงทุน (เงินเย็น 3 เดือน, 1 ปี, 5 ปีขึ้นไป)</p></div>
+<div class="card"><h3>ผลตอบแทนสูง = ความเสี่ยงสูง</h3><p>ราคาปรับขึ้นลง 10%-30% ได้ภายในไม่กี่วัน ประเมินด้านขาขึ้น (Upside) คู่กับด้านขาลง (Downside) เสมอ</p></div></div>
+</div></section>
+
+<section id="d"><div class="wrap">
+<div class="h"><b>配</b><div><h2>Bitcoin ควรมีในพอร์ตเท่าไร?</h2><small>ตัวอย่างพอร์ต 1,000,000 บาท ไม่มีสัดส่วนสำเร็จรูปที่เหมาะกับทุกคน</small></div></div>
+<div class="tabs" role="tablist" id="tabs"></div>
+<div id="pf"></div>
+</div></section>
+
+<section id="e"><div class="wrap">
+<div class="h"><b>险</b><div><h2>Crypto ไม่ได้เสี่ยงแค่ "ราคาตก"</h2><small>5 ความเสี่ยงของสินทรัพย์ดิจิทัล</small></div></div>
+<div class="grid">
+<div class="card"><h3>1 Market Risk</h3><p>ผันผวนสูงกว่าหุ้นหลายเท่า ขึ้นหรือลง 20-50% ในเวลาสั้น จากข่าวหรือเศรษฐกิจโลก</p></div>
+<div class="card"><h3>2 Liquidity Risk</h3><p>Altcoin หรือ NFT บางตัวมีปริมาณซื้อขายต่ำ ขายจริงอาจไม่มีผู้ซื้อ (Slippage สูง)</p></div>
+<div class="card"><h3>3 Technology Risk</h3><p>บล็อกเชนหรือ Smart Contract อาจมีช่องโหว่ ทำให้ DeFi ถูกโจมตีและสูญเงินในพูล</p></div>
+<div class="card"><h3>4 Cybersecurity Risk</h3><p>เว็บ Phishing มัลแวร์ดักรหัส โดนแฮกบัญชี หรือหลอกให้เซ็นอนุมัติธุรกรรมอันตราย</p></div>
+<div class="card"><h3>5 Custody Risk</h3><p>ฝากสินทรัพย์ไว้กับ Exchange ตัวกลาง หากล้มละลายหรือโดนโกง อาจถอนคืนไม่ได้</p></div></div>
+</div></section>
+
+<section id="f"><div class="wrap">
+<div class="h"><b>包</b><div><h2>Wallet ทำหน้าที่อะไร?</h2><small>แก้ข้อเข้าใจผิดเรื่อง Wallet</small></div></div>
+<div class="two">
+<div class="myth"><span class="tag">误 ข้อเข้าใจผิด</span><p>Wallet คือ "กระเป๋า" ที่เก็บเหรียญไว้ข้างใน</p><p>โทรศัพท์หาย = เหรียญหายไปเลย</p></div>
+<div class="fact"><span class="tag">实 ความจริง</span><p>เหรียญไม่ได้อยู่ใน Wallet แต่บันทึกบน Blockchain (Public Ledger) เสมอ</p><p>โทรศัพท์หาย เหรียญยังอยู่ หากมี Seed Phrase / Private Key ก็กู้คืนบนเครื่องใหม่ได้</p></div></div>
+<h3 style="margin:26px 0 12px">Hot Wallet vs Cold Wallet: ความสะดวก ปะทะ ความปลอดภัย</h3>
+<div class="two">
+<div class="card"><h3>Hot Wallet (ออนไลน์)</h3><p>เข้าถึงง่าย เชื่อมต่ออินเทอร์เน็ต เหมาะกับการเทรด แต่ความเสี่ยงสูงกว่า</p></div>
+<div class="card"><h3>Cold Wallet (ออฟไลน์)</h3><p>ความปลอดภัยสูง ตัดการเชื่อมต่อ ป้องกันการแฮก เหมาะกับเก็บระยะยาว</p></div></div>
+</div></section>
+
+<section id="g"><div class="wrap">
+<div class="h"><b>安</b><div><h2>7 กฎทองป้องกัน Crypto</h2><small>ดูแลสินทรัพย์ดิจิทัลของคุณด้วยความระมัดระวัง</small></div></div>
+<ol class="rules">
+<li><b>เก็บรหัสลับออฟไลน์</b>ห้ามแชร์ Seed Phrase กับใคร</li>
+<li><b>ใช้รหัสผ่านที่รัดกุม</b>ตั้งรหัสผ่านต่างกันในทุกบัญชี</li>
+<li><b>เปิดใช้งาน 2FA เสมอ</b>เพิ่มความปลอดภัยอีกชั้น</li>
+<li><b>ระวัง Phishing</b>อย่าคลิกลิงก์ที่น่าสงสัย</li>
+<li><b>ตรวจสอบที่อยู่กระเป๋า</b>ยืนยันที่อยู่ผู้รับก่อนโอน</li>
+<li><b>อัปเดตซอฟต์แวร์</b>ใช้เวอร์ชันล่าสุดเพื่อป้องกันช่องโหว่</li>
+<li><b>กระจายความเสี่ยง</b>แบ่งเก็บสินทรัพย์ในหลายกระเป๋า</li></ol>
+</div></section>
+
+<section id="h"><div class="wrap">
+<div class="h"><b>析</b><div><h2>Crypto กับ Portfolio Analysis</h2><small>เพิ่ม Bitcoin ในพอร์ตหุ้น 60% / พันธบัตร 40% (Historical Backtest)</small></div></div>
+<div class="scroll"><table>
+<tr><th>BTC ในพอร์ต</th><th>Expected Return</th><th>Volatility</th><th>Max Drawdown</th><th>Sharpe Ratio</th><th>Correlation</th></tr>
+<tr><td>0% (Standard)</td><td>ฐาน</td><td>ฐาน</td><td>-15% ถึง -25%</td><td>ฐาน</td><td>ไม่มีความสัมพันธ์</td></tr>
+<tr><td>1%</td><td>เพิ่มเล็กน้อย</td><td>ไม่เปลี่ยนอย่างมีนัยสำคัญ</td><td>-16% ถึง -26%</td><td>ดีขึ้น</td><td>ต่ำมาก</td></tr>
+<tr><td>2%</td><td>เพิ่มปานกลาง</td><td>เพิ่มเล็กน้อย</td><td>-17% ถึง -28%</td><td>ดีขึ้นชัดเจน</td><td>ช่วยกระจายความเสี่ยง</td></tr>
+<tr class="best"><td>5%</td><td>เพิ่มสูง</td><td>เพิ่มปานกลาง</td><td>-22% ถึง -35%</td><td>สูงที่สุด (Sweet Spot)</td><td>เริ่มสัมพันธ์กับตลาด Crypto</td></tr>
+<tr><td>10%</td><td>เพิ่มสูงมาก</td><td>เพิ่มสูงมาก</td><td>-30% ถึง -45%+</td><td>เริ่มลดลง (เสี่ยงโตเกิน)</td><td>ผลตอบแทนถูกขับเคลื่อนด้วย BTC เป็นหลัก</td></tr></table></div>
+<h3 style="margin:28px 0 8px">BTC Allocation vs Expected Return (%)</h3>
+<svg viewBox="0 0 600 260" width="100%" role="img" aria-label="กราฟเส้นแสดงผลตอบแทนคาดหวังเพิ่มขึ้นตามสัดส่วน Bitcoin จาก 7.0% ที่ 0% เป็น 13.8% ที่ 10%" style="background:var(--card);border:1px solid var(--line)">
+<g stroke="var(--line)"><line x1="40" y1="20" x2="580" y2="20"/><line x1="40" y1="110" x2="580" y2="110"/><line x1="40" y1="200" x2="580" y2="200"/></g>
+<polyline fill="none" stroke="var(--red)" stroke-width="3" points="40,198 92,180 144,164 300,120 560,47"/>
+<g fill="var(--gold)" stroke="var(--red)" stroke-width="2"><circle cx="40" cy="198" r="6"/><circle cx="92" cy="180" r="6"/><circle cx="144" cy="164" r="6"/><circle cx="300" cy="120" r="6"/><circle cx="560" cy="47" r="6"/></g>
+<g fill="var(--ink)" font-size="13" text-anchor="middle"><text x="40" y="222">0%</text><text x="92" y="222">1%</text><text x="144" y="222">2%</text><text x="300" y="222">5%</text><text x="548" y="222">10%</text>
+<text x="52" y="186">7.0%</text><text x="104" y="168">7.8%</text><text x="158" y="152">8.5%</text><text x="300" y="104">10.5%</text><text x="540" y="34">13.8%</text></g></svg>
+<div class="warn" style="margin-top:14px"><b>ข้อสรุปเชิงวิชาการ:</b> Bitcoin 1%-5% ช่วยเพิ่ม Sharpe Ratio ได้ดีที่สุดโดยไม่ทำให้ความเสี่ยงรวมสูงเกินไป แต่หากเกิน 10% พอร์ตจะถูกดึงความผันผวนตาม Bitcoin เป็นหลัก</div>
+</div></section>
+
+<div class="take"><div class="wrap">
+<h2>สิ่งที่คุณต้องรู้ก่อนเริ่มลงทุนใน Digital Assets</h2>
+<div class="grid">
+<div class="k"><b>Crypto ไม่ได้มีแค่เรื่อง "ราคา"</b>แต่ละสินทรัพย์มีฟังก์ชัน เทคโนโลยี และ Use Case ไม่เหมือนกัน</div>
+<div class="k"><b>มอง "ผลตอบแทน" คู่กับ "ความเสี่ยง"</b>ยิ่งคาดหวังกำไรสูง ต้องเตรียมรับ Max Drawdown ที่รุนแรง</div>
+<div class="k"><b>ไม่มีสัดส่วน Bitcoin ที่เหมาะกับทุกคน</b>จัดตาม Risk Profile และเป้าหมายการเงินของตนเอง</div>
+<div class="k"><b>Diversification ไม่ได้ลดความเสี่ยงเสมอไป</b>ต้องเข้าใจ Correlation ในแต่ละสภาวะตลาด</div>
+<div class="k"><b>ซื้อแล้วต้องรู้วิธีรักษา (Self-Custody)</b>การปกป้องกุญแจและ Seed Phrase คือหน้าที่สำคัญที่สุด</div></div>
+<p class="quote">"Investment Risk ไม่ได้จบลงเมื่อคุณกดปุ่มซื้อ"</p>
+</div></div>
+</main>
+<footer>เนื้อหาเพื่อการศึกษา ไม่ใช่คำแนะนำการลงทุน</footer>
+
+<script>
+var P=[
+{n:"สายปลอดภัย",r:"Bitcoin 1%-3% (ประมาณ 10,000-30,000 บาท)",g:"ปกป้องเงินต้น สร้างผลตอบแทนสม่ำเสมอ ใช้ Bitcoin เป็นส่วนเสริมเล็กน้อย (Upside Kicker)",s:[["เงินฝาก/พันธบัตร/ตลาดเงิน",70,"#6b5646"],["หุ้นกู้คุณภาพ/หุ้นปันผล",27,"#b8892b"],["Bitcoin",3,"#9b1c1c"]]},
+{n:"สายสมดุล",r:"Bitcoin 5%-10% (ประมาณ 50,000-100,000 บาท)",g:"สร้างการเติบโตของพอร์ต กระจายความเสี่ยงข้ามกลุ่มสินทรัพย์",s:[["ตราสารหนี้/ตลาดเงิน",30,"#6b5646"],["หุ้นไทยและต่างประเทศ",60,"#b8892b"],["Bitcoin",10,"#9b1c1c"]]},
+{n:"สายเติบโต",r:"Bitcoin 15%-20% (ประมาณ 150,000-200,000 บาท)",g:"ต้องการผลตอบแทนโดดเด่น ยอมรับความผันผวนสูงและขาดทุนชั่วคราวได้",s:[["หุ้นเติบโตสูง/นวัตกรรม",60,"#b8892b"],["ทองคำ/สินทรัพย์ทางเลือก",20,"#6b5646"],["Bitcoin 15% + ETH 5%",20,"#9b1c1c"]]}];
+var tabs=document.getElementById("tabs"),pf=document.getElementById("pf");
+function show(i){
+ [].forEach.call(tabs.children,function(b,j){b.setAttribute("aria-selected",j===i)});
+ var p=P[i],h='<h3>'+p.r+'</h3><p>'+p.g+'</p><div class="bar" role="img" aria-label="สัดส่วนพอร์ต">';
+ p.s.forEach(function(x){h+='<i style="flex:'+x[1]+' 1 0;background:'+x[2]+'">'+x[1]+'%</i>'});
+ h+='</div><div class="legend">';
+ p.s.forEach(function(x){h+='<div><span style="background:'+x[2]+'"></span>'+x[0]+': '+x[1]+'% ('+(x[1]*10000).toLocaleString()+' บาท)</div>'});
+ pf.innerHTML=h+'</div>';
+}
+P.forEach(function(p,i){var b=document.createElement("button");b.textContent=p.n;b.setAttribute("role","tab");b.onclick=function(){show(i)};tabs.appendChild(b)});
+show(1);
+</script>
+</body>
+</html>
